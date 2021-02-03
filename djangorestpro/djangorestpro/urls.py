@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('myrestapp.urls'))
+    path('', include('myrestapp.urls')),
+    path('api-auth/', include('rest_framework.urls')) # this will add the login button in  url.................
 ]
