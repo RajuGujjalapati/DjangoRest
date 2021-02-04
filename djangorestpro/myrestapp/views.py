@@ -9,7 +9,7 @@ from .models import Language, Paradigm, Programmer
 class LanguageView(viewsets.ModelViewSet):
     queryset = Language.objects.all()
     serializer_class = LanguageSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)# for local model/view
+    # permission_classes = (permissions.IsAuthenticatedOrReadOnly,)  # for local model/view
     # to affect in global set this in settings.py
 
 
